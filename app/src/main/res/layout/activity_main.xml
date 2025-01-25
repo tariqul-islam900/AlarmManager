@@ -1,21 +1,35 @@
-<?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:padding="2dp"
     tools:context=".MainActivity">
-    <TimePicker
-        android:id="@+id/timePicker"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_centerHorizontal="true" />
-    <Button
-        android:id="@+id/buttonAlarm"
+
+    <TextView
+        android:id="@+id/textViewSetAlarm"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@id/timePicker"
-        android:layout_centerInParent="true"
-        android:layout_marginTop="10dp"
-        android:text="Set Alarm" />
+        android:layout_centerHorizontal="true"
+        android:text="Set Alarm"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:layout_marginTop="16dp" />
+
+    <ImageView
+        android:id="@+id/imageViewAddAlarm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textViewSetAlarm"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="8dp"
+        android:src="@android:drawable/ic_input_add"
+        android:contentDescription="Add Alarm" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerViewAlarms"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/imageViewAddAlarm"
+        android:layout_marginTop="16dp"
+        android:padding="8dp" />
 </RelativeLayout>

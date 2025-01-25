@@ -1,3 +1,10 @@
 <resources>
     <string name="app_name">Alarm Manager</string>
+    <string name="select_alarm_tone">Select Alarm Tone</string>
+    <string name="remove_selected_tone">Remove Selected Tone</string>
+    <string name="set_alarm">Set Alarm</string>
+    <string name="snooze_5_minutes">Snooze 5 minutes</string>
+    <string name="snooze_10_minutes">Snooze 10 minutes</string>
+    <string name="snooze_15_minutes">Snooze 15 minutes</string>
+    <string name="close">Close</string>
 </resources>
